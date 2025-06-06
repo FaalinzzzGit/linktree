@@ -1,0 +1,22 @@
+<%- include('partials/header', { title: 'Create Your LinkTree' }) %>
+
+  <main>
+    <div class="auth-container">
+      <h1 class="auth-title">Create Your LinkTree</h1>
+      
+      <div id="register-form">
+        <form action="/register" method="POST" class="auth-form">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control" required minlength="6">
+            <p class="form-text">Password must be at least 6 characters long</p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+        </form>
+        
+        <div class="form-footer">
+          <p>Already have an account? <a href="#" data

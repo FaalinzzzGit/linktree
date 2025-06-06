@@ -1,0 +1,50 @@
+<%- include('partials/header', { title: 'Home' }) %>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Your Link in Bio Tool</h1>
+      <p>
+        Create a beautiful landing page with all your important links in one
+        place. Perfect for social media bios, websites, and more.
+      </p>
+      <div class="hero-btns">
+        <a href="/create" class="btn btn-primary">Get Started</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">Why Choose LinkTree?</h2>
+      <div class="about-content">
+        <div class="about-card">
+          <i data-feather="zap"></i>
+          <h3>Quick Setup</h3>
+          <p>
+            Create your personalized link page in minutes with our easy-to-use
+            dashboard.
+          </p>
+        </div>
+        <div class="about-card">
+          <i data-feather="layout"></i>
+          <h3>Beautiful Design</h3>
+          <p>
+            Choose from our clean, modern templates that work on any device.
+          </p>
+        </div>
+        <div class="about-card">
+          <i data-feather="bar-chart-2"></i>
+          <h3>Analytics</h3>
+          <p>
+            Track clicks and see which links are performing best with our simple
+            analytics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

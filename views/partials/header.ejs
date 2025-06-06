@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkTree - <%= title || 'Your Link in Bio Tool' %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="/" class="logo">
+            <i data-feather="link"></i>
+            <span>LinkTree</span>
+          </a>
+          <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/create">Create</a>
+            <% if (user) { %>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/logout">Logout</a>
+            <% } else { %>
+            <a href="/create">Login</a>
+            <% } %>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
